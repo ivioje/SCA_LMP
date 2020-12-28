@@ -5,7 +5,9 @@
   scroll-behavior: smooth;
 }
 body {
-  background: rgb(245, 248, 248);
+  background: rgb(255, 255, 255);
+  color: rgb(27, 27, 27);
+  font-family: "Poiret One", cursive;
 }
 
 /*NAV STYLING */
@@ -27,6 +29,7 @@ nav {
   font-size: 18px;
   letter-spacing: 0px;
   text-decoration: none;
+  font-family: "Sofia", cursive;
 }
 
 nav ul {
@@ -60,6 +63,7 @@ nav ul li a {
   position: relative;
   letter-spacing: 0.2em;
   cursor: pointer;
+  font-weight: bold;
 }
 
 nav ul li a::before {
@@ -102,8 +106,7 @@ nav ul li a:hover:before {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    width: 90%;
-    border-right: 1px solid gray;
+    width: 100%;
   }
 
   .items ul li {
@@ -257,7 +260,6 @@ nav ul li a:hover:before {
 .container .slide_img img {
   width: 100%;
   height: inherit;
-
 }
 
 .container #nav_slide {
@@ -333,7 +335,6 @@ nav ul li a:hover:before {
   }
 }
 
-
 /*style for the slides*/
 #one,
 #two,
@@ -367,7 +368,7 @@ nav ul li a:hover:before {
 }
 .des {
   font-size: 12px;
-  font-weight: lighter;
+  font-weight: bold;
   letter-spacing: 0.2em;
   text-transform: uppercase;
   padding: 10px;
@@ -375,11 +376,15 @@ nav ul li a:hover:before {
 .btn_1 {
   padding: 20px;
   background: transparent;
-  font-size: large;
-  color: white;
   outline: none;
   border: 1px solid gray;
   cursor: pointer;
+}
+.btn_1 a {
+  color: white;
+  text-decoration: none;
+  font-size: large;
+  letter-spacing: 0.1em;
 }
 
 .first {
@@ -403,7 +408,7 @@ nav ul li a:hover:before {
 }
 #projects h1 {
   text-align: center;
-  padding-bottom: 50px;
+  padding-bottom: 0;
   font-size: 30px;
 }
 .first_pro,
@@ -411,36 +416,74 @@ nav ul li a:hover:before {
 .third_pro,
 .fourth_pro,
 .fifth_pro {
-  width: 250px;
-  height: 250px;
+  width: 270px;
+  height: 330px;
   display: block;
   text-align: center;
-  padding: 50px;
+  padding: 20px;
 }
+.first_pro:hover,
+.sec_pro:hover,
+.third_pro:hover,
+.fourth_pro:hover,
+.fifth_pro:hover {
+  -webkit-box-shadow: 0px 3px 7px 0px rgba(50, 53, 50, 0.5);
+  -moz-box-shadow: 0px 3px 7px 0px rgba(50, 53, 50, 0.5);
+  box-shadow: 0px 3px 7px 0px rgba(50, 53, 50, 0.5);
+}
+
 .first_pro a img,
 .sec_pro a img,
 .third_pro a img,
 .fourth_pro a img,
 .fifth_pro a img {
-  width: 100%;
-  height: 100%;
+  width: 200px;
+  height: 200px;
   border-radius: 100%;
+  padding: 40px;
+  transform: scale(1);
+  transition: 0.3s ease-in-out;
+  border: 1px solid rgb(241, 238, 238);
 }
-.first_pro h2,
-.sec_pro h2,
-.third_pro h2,
-.fourth_pro h2,
-.fifth_pro h2 {
+.first_pro h2 a,
+.sec_pro h2 a,
+.third_pro h2 a,
+.fourth_pro h2 a,
+.fifth_pro h2 a {
   font-size: 18px;
   padding: 10px;
-  font-weight: bloder;
+  font-weight: bolder;
+  text-decoration: none;
+  color: rgb(70, 68, 68);
+}
+.first_pro:hover a img,
+.sec_pro:hover a img,
+.third_pro:hover a img,
+.fourth_pro:hover a img,
+.fifth_pro:hover a img {
+  transform: scale(1.3);
+  border: none;
+}
+
+@media screen and (max-width: 540px) {
+  .first_pro {
+    padding: 0;
+    width: 250px;
+  }
+}
+.pro_des {
+  font-size: 14px;
 }
 /*about section styling*/
 #about {
-  background-color: rgb(217, 228, 228);
+  background-image: url(../images/Vector.png);
+  background-size: cover;
+  background-position: top;
+  background-repeat: no-repeat;
   margin-bottom: 50px;
+  height: 80vh;
 }
-.about h1 {
+#about h1 {
   text-align: center;
   padding: 10px;
 }
@@ -470,6 +513,9 @@ nav ul li a:hover:before {
   justify-content: center;
   flex-direction: column;
   letter-spacing: 0.1em;
+  /* background: rgba(0, 0, 0, 0.8); */
+  /* color:rgb(31, 30, 30); */
+  opacity: 0.9;
 }
 .main_des {
   width: 80%;
@@ -627,17 +673,30 @@ nav ul li a:hover:before {
   justify-content: center;
   flex-wrap: wrap;
   text-align: center;
+  margin-top: 30px;
 }
-.first_skill {
-  width: 250px;
-  height: 250px;
+.first_skill,
+.sec_skill,
+.third_skill,
+.fourth_skill,
+.fifth_skill {
+  width: 220px;
+  height: 320px;
   display: block;
   text-align: center;
   padding: 50px;
+  margin: 15px;
+  -webkit-box-shadow: 0px 3px 7px 0px rgba(156, 156, 156, 0.5);
+  -moz-box-shadow: 0px 3px 7px 0px rgba(126, 126, 126, 0.5);
+  box-shadow: 0px 3px 7px 0px rgba(119, 119, 119, 0.5);
 }
-.first_skill img {
-  width: 100%;
-  height: 100%;
+.first_skill img,
+.sec_skill img,
+.third_skill img,
+.fourth_skill img,
+.fifth_skill img {
+  width: 100px;
+  height: 100px;
   border-radius: 100%;
 }
 #skills h1 {
@@ -656,7 +715,7 @@ nav ul li a:hover:before {
   flex-direction: column;
   color: white;
   margin-top: 5vh;
-  background-image: url(/images/map.jpg);
+  background-image: url(../images/map.jpg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -690,7 +749,7 @@ nav ul li a:hover:before {
   margin-left: 10px;
 }
 .contact {
-  background-image: url(/images/andres-jasso-1NbA4Lh7rsg-unsplash.jpg);
+  background-image: url(../images/andres-jasso-1NbA4Lh7rsg-unsplash.jpg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -732,16 +791,22 @@ nav ul li a:hover:before {
 #send {
   width: 150px;
   height: 40px;
-  background: rgb(124, 189, 189);
+  background: rgb(156, 187, 187);
   text-transform: uppercase;
-  letter-spacing: 0.1em;
+  font-weight: lighter;
   outline: none;
   border: 1px solid gray;
   border-radius: 20px;
+  cursor: pointer;
+  transform: scale(1);
+  transition: 0.3s ease-in-out;
+}
+#send:hover {
+  transform: scale(1.3);
 }
 @media screen and (max-width: 950px) {
   .contact_card {
-    width: 60%;
+    width: 70%;
   }
 }
 @media screen and (max-width: 520px) {
@@ -757,4 +822,36 @@ footer p {
   text-align: center;
   font-size: 13px;
   color: rgb(65, 64, 64);
+}
+
+.heading {
+  position: relative;
+}
+.heading span {
+  background: white;
+}
+.heading::before {
+  content: "";
+  display: block;
+  width: 100px;
+  height: 2px;
+  background: #000;
+  position: absolute;
+  left: 40%;
+  top: 50%;
+  z-index: -2;
+}
+.heading::after {
+  content: "";
+  display: block;
+  width: 100px;
+  height: 2px;
+  background: #000;
+  position: absolute;
+  right: 40%;
+  top: 50%;
+  z-index: -2;
+}
+hr {
+  margin-top: 25px;
 }
