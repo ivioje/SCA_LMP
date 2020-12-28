@@ -243,6 +243,7 @@ nav ul li a:hover:before {
   padding-bottom: 38%;
   user-select: none;
   background-image: url(../images/michael-dziedzic-gEN5Btvf2Eg-unsplash.jpg);
+  background-size: 100%;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -256,6 +257,7 @@ nav ul li a:hover:before {
 .container .slide_img img {
   width: 100%;
   height: inherit;
+
 }
 
 .container #nav_slide {
@@ -330,11 +332,9 @@ nav ul li a:hover:before {
     height: 12px;
   }
 }
-/* @media screen  and(min-width: 970px){
-	.me{ display: none;}
-} */
 
-/*style for first slide*/
+
+/*style for the slides*/
 #one,
 #two,
 #three,
