@@ -480,8 +480,14 @@ nav ul li a:hover:before {
   background-size: cover;
   background-position: top;
   background-repeat: no-repeat;
-  margin-bottom: 50px;
-  height: 80vh;
+  margin-bottom: 100px;
+  height: 400px;
+}
+@media screen and (max-width:800px) {
+  #about {
+    height: 600px;
+    margin-bottom: 120px;
+  }
 }
 #about h1 {
   text-align: center;
