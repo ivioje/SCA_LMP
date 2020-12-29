@@ -507,11 +507,15 @@ nav ul li a:hover:before {
   outline: none;
   border: 1px solid rgba(34, 33, 33, 0.6);
   background: transparent;
-  font-size: 13px;
-  text-transform: uppercase;
-  letter-spacing: 0.2em;
   cursor: pointer;
   margin: 5px;
+}
+.btns button a {
+font-size: 13px;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  text-decoration: none;
+  color: rgb(70, 68, 68);
 }
 .about {
   display: flex;
@@ -692,9 +696,9 @@ nav ul li a:hover:before {
   text-align: center;
   padding: 50px;
   margin: 15px;
-  -webkit-box-shadow: 0px 3px 7px 0px rgba(156, 156, 156, 0.5);
-  -moz-box-shadow: 0px 3px 7px 0px rgba(126, 126, 126, 0.5);
-  box-shadow: 0px 3px 7px 0px rgba(119, 119, 119, 0.5);
+  -webkit-box-shadow: 0px 3px 7px 0px rgba(190, 190, 190, 0.5);
+  -moz-box-shadow: 0px 3px 7px 0px rgba(189, 189, 189, 0.5);
+  box-shadow: 0px 3px 7px 0px rgba(165, 165, 165, 0.5);
 }
 .first_skill img,
 .sec_skill img,
@@ -801,7 +805,7 @@ nav ul li a:hover:before {
   text-transform: uppercase;
   font-weight: lighter;
   outline: none;
-  border: 1px solid gray;
+  border: 1px solid rgb(216, 216, 216);
   border-radius: 20px;
   cursor: pointer;
   transform: scale(1);
@@ -874,4 +878,25 @@ hr {
   line-height: 50px;
   color: white;
   font-size: 22px;
+}
+.links_grid{
+  display: grid;
+  grid-template-columns:repeat(auto-fill, minmax(200px, 1fr));
+  grid-gap: 10px;
+  text-align: center;
+  padding: 5px;
+}
+.links_grid a {
+   text-decoration: none;
+   color: rgb(57, 58, 58);
+}
+.links_grid a:hover {
+  opacity: .9;
+}
+footer h1 {
+  text-align: center;
+  font-size: 14px;
+  text-transform: uppercase;
+  font-weight: lighter;
+  padding: 20px;
 }
