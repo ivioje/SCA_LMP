@@ -4,7 +4,6 @@
   box-sizing: border-box;
 }
 body {
-  width: 100%;
   font-family: "Nanum Myeongjo", serif;
   letter-spacing: 0.1em;
   color: rgb(29, 29, 29);
@@ -13,7 +12,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  flex-direction: column;
+  width: 100%;
 }
 .container {
   display: flex;
@@ -116,8 +115,6 @@ button:hover {
 @media screen and (max-width: 1000px) {
   .container {
     display: flex;
-    align-items: center;
-    justify-content: center;
     flex-direction: column-reverse;
     width: 100%;
   }
