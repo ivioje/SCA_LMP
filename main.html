@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form Validation</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+   <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Nanum+Myeongjo&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="container">
+        <div class="section1">
+          <h1>Let's work together</h1>
+          <p>
+            We'd love to hear from you!. Send us a message using the form
+            opposite, or email us. We'd love to hear from you!. Send us a
+            message using the form opposite, or email us.
+          </p>
+          <form
+            action="submitPage.html"
+            method="GET"
+            name="form"
+            onsubmit="return (validate());" novalidate
+          >
+            <div class="one">
+              <div id="firstname">
+                <label for="fname">First name</label><br />
+
+                <div class="fnameMsg err"></div>
+
+                <input type="text" name="fname" id="fname" /><br />
+              </div>
+
+              <div id="lastname">
+                <label for="lname">Last name</label><br />
+
+                <div class="lnameMsg err"></div>
+
+                <input type="text" name="lname" id="lname" /><br />
+              </div>
+            </div>
+            <div class="two">
+              <label for="email">Email</label><br />
+
+              <div class="emailMsg err"></div>
+
+              <input type="email" name="email" id="email" /><br />
+
+              <label for="company">Company</label><br />
+              <div class="companyMsg err"></div>
+              <input type="text" name="company" id="company" /><br />
+
+              <label for="phone">Phone</label>
+              <em>optional</em><br />
+
+              <input type="tel" name="phone" id="phone" /><br />
+
+              <label for="textarea">How can we help you?</label>
+              <em>max 500 characters</em><br />
+              <div class="txtMsg err"></div>
+              <textarea
+                name="message"
+                id="message"
+                cols="30"
+                rows="5"
+              ></textarea
+              ><br />
+            </div>
+
+            <div class="radio">
+                <div class="radioMsg err"></div>
+              <label for="radio-btns">Expected budget</label><br />
+              <input type="radio" name="option" id="opt1" />
+              Less than $25k<br />
+              <input type="radio" name="option" id="opt2" />
+              $25k - $50k<br />
+              <input type="radio" name="option" id="opt3" />
+              $50k - $100k<br />
+              <input type="radio" name="option" id="opt4" />
+              $100k+<br />
+            </div>
+
+            <label for="about">How did you hear about us?</label><br />
+            <div class="aboutMsg err"></div>
+            <input type="text" name="about" id="about" /><br />
+            <button type="submit">Submit</button>
+          </form>
+        </div>
+
+        <div class="image">
+          <img
+            src="image/toa-heftiba-FV3GConVSss-unsplash.jpg"
+            alt=""
+          />
+        </div>
+      </div>
+    </div>
+    <script src="js/index.js"></script>
+  </body>
+</html>
